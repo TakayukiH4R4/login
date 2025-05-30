@@ -28,6 +28,7 @@ public class LoginDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
+		con.close();
 			con.close();
 		}
 		return dto;
