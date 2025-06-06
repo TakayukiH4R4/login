@@ -17,7 +17,7 @@ public String execute() throws SQLException {
 
 	dto = dao.select(name,password);
 
-	if( name.equals(dto.getName())) {
+	if(name.equals(dto.getName())) {
 		if(password.equals(dto.getPassword())) {
 			ret = SUCCESS;
 		}
